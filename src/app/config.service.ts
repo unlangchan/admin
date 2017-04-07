@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 export class ConfigService {
 
   layout: string = "default";//default,fixed,boxed
-  sidebarOpenOrCollapse: string = "open";//open,collapse
+  sidebarOpenOrCollapse: string = "collapse";//open,collapse
   sidebarExpandOrHover: string = "expand";//expand,hover
   rightSidebarSlideType: string = "over";//over(over content),push(push content)
   rightSidebarSkinDarkOrLight: string = "dark";//dark,light

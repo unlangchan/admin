@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { DirectivesModule } from './directives/directives.module';
 
+import { SocketService } from './socket.service';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,7 @@ import { DirectivesModule } from './directives/directives.module';
 
     DirectivesModule
   ],
-  providers: [],
+  providers: [ SocketService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

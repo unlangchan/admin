@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ConfigService } from './config.service';
+import { SocketService } from './socket.service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,8 @@ import { ConfigService } from './config.service';
 })
 export class AppComponent {
 
-  constructor(public conf: ConfigService) {
+  constructor(public conf: ConfigService, public socket: SocketService) {
+    console.log(socket);
     // setInterval(() => {
     //   conf.skins = conf.skins === 'blue' ? 'black' : 'blue';
     // }, 1000)

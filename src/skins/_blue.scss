@@ -11,7 +11,7 @@
     //Navbar
     .main-header {
         .navbar {
-            @include navbar-variant($light-blue, #fff);
+            @include navbar-variant($light-blue, #fff !important);
             .sidebar-toggle {
                 color: #fff;
                 &:hover {
